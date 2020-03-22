@@ -329,3 +329,559 @@ Processing by Admin::AdminUsersController#show as HTML
 Completed 200 OK in 39ms (Views: 35.0ms | ActiveRecord: 0.8ms | Allocations: 38033)
 
 
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Started GET "/admin/admin_users/1" for ::1 at 2020-03-21 22:27:22 -0500
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Admin::AdminUsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAdminUser Load (0.1ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAdminUser Load (0.1ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/yueranyu/.rvm/gems/ruby-2.6.3/gems/activeadmin-2.6.1/app/views/active_admin/resource/show.html.arb
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "active_admin_comments" WHERE "active_admin_comments"."resource_type" = ? AND "active_admin_comments"."resource_id" = ? AND "active_admin_comments"."namespace" = ?[0m  [["resource_type", "AdminUser"], ["resource_id", 1], ["namespace", "admin"]]
+  [1m[36mActiveAdmin::Comment Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "active_admin_comments" WHERE "active_admin_comments"."resource_type" = ? AND "active_admin_comments"."resource_id" = ? AND "active_admin_comments"."namespace" = ? LIMIT ? OFFSET ?[0m  [["resource_type", "AdminUser"], ["resource_id", 1], ["namespace", "admin"], ["LIMIT", 1], ["OFFSET", 0]]
+  [1m[36mActiveAdmin::Comment Load (0.1ms)[0m  [1m[34mSELECT "active_admin_comments".* FROM "active_admin_comments" WHERE "active_admin_comments"."resource_type" = ? AND "active_admin_comments"."resource_id" = ? AND "active_admin_comments"."namespace" = ? ORDER BY created_at ASC LIMIT ? OFFSET ?[0m  [["resource_type", "AdminUser"], ["resource_id", 1], ["namespace", "admin"], ["LIMIT", 25], ["OFFSET", 0]]
+  [1m[36mAdminUser Load (0.1ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ?[0m  [["id", 1]]
+  Rendered /Users/yueranyu/.rvm/gems/ruby-2.6.3/gems/activeadmin-2.6.1/app/views/active_admin/resource/show.html.arb (Duration: 23.1ms | Allocations: 34425)
+Completed 200 OK in 33ms (Views: 23.1ms | ActiveRecord: 1.0ms | Allocations: 44251)
+
+
+Started GET "/admin/admin_users/1" for ::1 at 2020-03-21 22:31:12 -0500
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Admin::AdminUsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAdminUser Load (0.1ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAdminUser Load (0.1ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/yueranyu/.rvm/gems/ruby-2.6.3/gems/activeadmin-2.6.1/app/views/active_admin/resource/show.html.arb
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "active_admin_comments" WHERE "active_admin_comments"."resource_type" = ? AND "active_admin_comments"."resource_id" = ? AND "active_admin_comments"."namespace" = ?[0m  [["resource_type", "AdminUser"], ["resource_id", 1], ["namespace", "admin"]]
+  [1m[36mActiveAdmin::Comment Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "active_admin_comments" WHERE "active_admin_comments"."resource_type" = ? AND "active_admin_comments"."resource_id" = ? AND "active_admin_comments"."namespace" = ? LIMIT ? OFFSET ?[0m  [["resource_type", "AdminUser"], ["resource_id", 1], ["namespace", "admin"], ["LIMIT", 1], ["OFFSET", 0]]
+  [1m[36mActiveAdmin::Comment Load (0.2ms)[0m  [1m[34mSELECT "active_admin_comments".* FROM "active_admin_comments" WHERE "active_admin_comments"."resource_type" = ? AND "active_admin_comments"."resource_id" = ? AND "active_admin_comments"."namespace" = ? ORDER BY created_at ASC LIMIT ? OFFSET ?[0m  [["resource_type", "AdminUser"], ["resource_id", 1], ["namespace", "admin"], ["LIMIT", 25], ["OFFSET", 0]]
+  [1m[36mAdminUser Load (0.1ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ?[0m  [["id", 1]]
+  Rendered /Users/yueranyu/.rvm/gems/ruby-2.6.3/gems/activeadmin-2.6.1/app/views/active_admin/resource/show.html.arb (Duration: 26.9ms | Allocations: 34419)
+Completed 200 OK in 39ms (Views: 26.9ms | ActiveRecord: 1.3ms | Allocations: 44237)
+
+
+Started GET "/admin/customers" for ::1 at 2020-03-21 22:31:14 -0500
+Processing by Admin::CustomersController#index as HTML
+  [1m[36mAdminUser Load (0.1ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/yueranyu/.rvm/gems/ruby-2.6.3/gems/activeadmin-2.6.1/app/views/active_admin/resource/index.html.arb
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT 1 AS one FROM "customers" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  Rendered /Users/yueranyu/.rvm/gems/ruby-2.6.3/gems/activeadmin-2.6.1/app/views/active_admin/resource/index.html.arb (Duration: 40.2ms | Allocations: 29633)
+Completed 200 OK in 46ms (Views: 41.6ms | ActiveRecord: 0.8ms | Allocations: 33236)
+
+
+Started GET "/admin/customers/new" for ::1 at 2020-03-21 22:32:13 -0500
+Processing by Admin::CustomersController#new as HTML
+  [1m[36mAdminUser Load (0.1ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/yueranyu/.rvm/gems/ruby-2.6.3/gems/activeadmin-2.6.1/app/views/active_admin/resource/new.html.arb
+  Rendered /Users/yueranyu/.rvm/gems/ruby-2.6.3/gems/activeadmin-2.6.1/app/views/active_admin/resource/new.html.arb (Duration: 32.8ms | Allocations: 31217)
+Completed 200 OK in 42ms (Views: 34.8ms | ActiveRecord: 0.1ms | Allocations: 38628)
+
+
+Started POST "/admin/customers" for ::1 at 2020-03-21 22:33:39 -0500
+Processing by Admin::CustomersController#create as HTML
+  Parameters: {"authenticity_token"=>"woB5z3LyKzLHMSdwDgt4MVVU/oRmmRN7f857t53WAxvXrv2D032DxVHo+cov6WBKvbIOKJ5IahT7L5M+ZzWrBA==", "customer"=>{"fullname"=>"Moon", "phone_number"=>"1233333444", "email"=>"e", "image"=>"", "notes"=>""}, "commit"=>"Create Customer"}
+  [1m[36mAdminUser Load (0.1ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCustomer Create (0.5ms)[0m  [1m[32mINSERT INTO "customers" ("fullname", "phone_number", "email", "image", "notes", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["fullname", "Moon"], ["phone_number", "1233333444"], ["email", "e"], ["image", ""], ["notes", ""], ["created_at", "2020-03-22 03:33:39.461007"], ["updated_at", "2020-03-22 03:33:39.461007"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/admin/customers/1
+Completed 302 Found in 14ms (ActiveRecord: 1.4ms | Allocations: 9960)
+
+
+Started GET "/admin/customers/1" for ::1 at 2020-03-21 22:33:39 -0500
+Processing by Admin::CustomersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAdminUser Load (0.1ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/yueranyu/.rvm/gems/ruby-2.6.3/gems/activeadmin-2.6.1/app/views/active_admin/resource/show.html.arb
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "active_admin_comments" WHERE "active_admin_comments"."resource_type" = ? AND "active_admin_comments"."resource_id" = ? AND "active_admin_comments"."namespace" = ?[0m  [["resource_type", "Customer"], ["resource_id", 1], ["namespace", "admin"]]
+  [1m[36mActiveAdmin::Comment Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "active_admin_comments" WHERE "active_admin_comments"."resource_type" = ? AND "active_admin_comments"."resource_id" = ? AND "active_admin_comments"."namespace" = ? LIMIT ? OFFSET ?[0m  [["resource_type", "Customer"], ["resource_id", 1], ["namespace", "admin"], ["LIMIT", 1], ["OFFSET", 0]]
+  Rendered /Users/yueranyu/.rvm/gems/ruby-2.6.3/gems/activeadmin-2.6.1/app/views/active_admin/resource/show.html.arb (Duration: 36.8ms | Allocations: 29195)
+Completed 200 OK in 42ms (Views: 38.0ms | ActiveRecord: 0.6ms | Allocations: 32890)
+
+
+Started GET "/admin/customers" for ::1 at 2020-03-21 22:33:43 -0500
+Processing by Admin::CustomersController#index as HTML
+  [1m[36mAdminUser Load (0.1ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/yueranyu/.rvm/gems/ruby-2.6.3/gems/activeadmin-2.6.1/app/views/active_admin/resource/index.html.arb
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT 1 AS one FROM "customers" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT 1 AS one FROM "customers" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "customers"[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT 1 AS one FROM "customers" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT "customers".* FROM "customers" ORDER BY "customers"."id" desc LIMIT ? OFFSET ?[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  Rendered /Users/yueranyu/.rvm/gems/ruby-2.6.3/gems/activeadmin-2.6.1/app/views/active_admin/resource/index.html.arb (Duration: 38.2ms | Allocations: 43580)
+Completed 200 OK in 41ms (Views: 38.2ms | ActiveRecord: 0.5ms | Allocations: 45783)
+
+
+Started GET "/admin/customers/new" for ::1 at 2020-03-21 22:39:03 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Admin::CustomersController#new as HTML
+  [1m[36mAdminUser Load (0.1ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/yueranyu/.rvm/gems/ruby-2.6.3/gems/activeadmin-2.6.1/app/views/active_admin/resource/new.html.arb
+  Rendered /Users/yueranyu/.rvm/gems/ruby-2.6.3/gems/activeadmin-2.6.1/app/views/active_admin/resource/new.html.arb (Duration: 22.6ms | Allocations: 29628)
+Completed 200 OK in 39ms (Views: 23.3ms | ActiveRecord: 1.0ms | Allocations: 43203)
+
+
+Started POST "/admin/customers" for ::1 at 2020-03-21 22:40:01 -0500
+Processing by Admin::CustomersController#create as HTML
+  Parameters: {"authenticity_token"=>"02wlftjAuRWsTE1htFXSyYQGcAQEFfyHJKhwatxnlEbGQqEyeU8R4jqVk9uVt8qybOCAqPzEheigSZjjJoQ8WQ==", "customer"=>{"fullname"=>"Ami", "phone_number"=>"20291023934", "email"=>"ami@rrc.ca", "image"=>"", "notes"=>"Ami short blue hair"}, "commit"=>"Create Customer"}
+  [1m[36mAdminUser Load (0.1ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCustomer Create (0.5ms)[0m  [1m[32mINSERT INTO "customers" ("fullname", "phone_number", "email", "image", "notes", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["fullname", "Ami"], ["phone_number", "20291023934"], ["email", "ami@rrc.ca"], ["image", ""], ["notes", "Ami short blue hair"], ["created_at", "2020-03-22 03:40:01.165880"], ["updated_at", "2020-03-22 03:40:01.165880"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/admin/customers/2
+Completed 302 Found in 9ms (ActiveRecord: 1.3ms | Allocations: 7796)
+
+
+Started GET "/admin/customers/2" for ::1 at 2020-03-21 22:40:01 -0500
+Processing by Admin::CustomersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAdminUser Load (0.1ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering /Users/yueranyu/.rvm/gems/ruby-2.6.3/gems/activeadmin-2.6.1/app/views/active_admin/resource/show.html.arb
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "active_admin_comments" WHERE "active_admin_comments"."resource_type" = ? AND "active_admin_comments"."resource_id" = ? AND "active_admin_comments"."namespace" = ?[0m  [["resource_type", "Customer"], ["resource_id", 2], ["namespace", "admin"]]
+  [1m[36mActiveAdmin::Comment Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "active_admin_comments" WHERE "active_admin_comments"."resource_type" = ? AND "active_admin_comments"."resource_id" = ? AND "active_admin_comments"."namespace" = ? LIMIT ? OFFSET ?[0m  [["resource_type", "Customer"], ["resource_id", 2], ["namespace", "admin"], ["LIMIT", 1], ["OFFSET", 0]]
+  Rendered /Users/yueranyu/.rvm/gems/ruby-2.6.3/gems/activeadmin-2.6.1/app/views/active_admin/resource/show.html.arb (Duration: 25.3ms | Allocations: 29239)
+Completed 200 OK in 29ms (Views: 25.3ms | ActiveRecord: 0.6ms | Allocations: 32398)
+
+
+Started GET "/admin/customers" for ::1 at 2020-03-21 22:40:03 -0500
+Processing by Admin::CustomersController#index as HTML
+  [1m[36mAdminUser Load (0.1ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/yueranyu/.rvm/gems/ruby-2.6.3/gems/activeadmin-2.6.1/app/views/active_admin/resource/index.html.arb
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT 1 AS one FROM "customers" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT 1 AS one FROM "customers" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "customers"[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT 1 AS one FROM "customers" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT "customers".* FROM "customers" ORDER BY "customers"."id" desc LIMIT ? OFFSET ?[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  Rendered /Users/yueranyu/.rvm/gems/ruby-2.6.3/gems/activeadmin-2.6.1/app/views/active_admin/resource/index.html.arb (Duration: 39.4ms | Allocations: 45659)
+Completed 200 OK in 42ms (Views: 39.4ms | ActiveRecord: 0.5ms | Allocations: 47975)
+
+
+Started GET "/admin/customers/1/edit" for ::1 at 2020-03-21 22:40:07 -0500
+Processing by Admin::CustomersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAdminUser Load (0.1ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/yueranyu/.rvm/gems/ruby-2.6.3/gems/activeadmin-2.6.1/app/views/active_admin/resource/edit.html.arb
+  [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered /Users/yueranyu/.rvm/gems/ruby-2.6.3/gems/activeadmin-2.6.1/app/views/active_admin/resource/edit.html.arb (Duration: 21.5ms | Allocations: 29008)
+Completed 200 OK in 27ms (Views: 23.1ms | ActiveRecord: 0.2ms | Allocations: 32560)
+
+
+Started PATCH "/admin/customers/1" for ::1 at 2020-03-21 22:40:41 -0500
+Processing by Admin::CustomersController#update as HTML
+  Parameters: {"authenticity_token"=>"OzPRWt39P156kPSbG9DyfoAkZAYMiK01QDfQSw/PnwkuHVUWfHKXqexJKiE6MuoFaMKUqvRZ1FrE1jjC9Sw3Fg==", "customer"=>{"fullname"=>"Moon", "phone_number"=>"1233333444", "email"=>"moon@rrc.ca", "image"=>"", "notes"=>"Moon is the leader among her sisters."}, "commit"=>"Update Customer", "id"=>"1"}
+  [1m[36mAdminUser Load (0.1ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCustomer Update (0.3ms)[0m  [1m[33mUPDATE "customers" SET "email" = ?, "notes" = ?, "updated_at" = ? WHERE "customers"."id" = ?[0m  [["email", "moon@rrc.ca"], ["notes", "Moon is the leader among her sisters."], ["updated_at", "2020-03-22 03:40:41.704029"], ["id", 1]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/admin/customers/1
+Completed 302 Found in 24ms (ActiveRecord: 1.3ms | Allocations: 11610)
+
+
+Started GET "/admin/customers/1" for ::1 at 2020-03-21 22:40:41 -0500
+Processing by Admin::CustomersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAdminUser Load (0.1ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/yueranyu/.rvm/gems/ruby-2.6.3/gems/activeadmin-2.6.1/app/views/active_admin/resource/show.html.arb
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "active_admin_comments" WHERE "active_admin_comments"."resource_type" = ? AND "active_admin_comments"."resource_id" = ? AND "active_admin_comments"."namespace" = ?[0m  [["resource_type", "Customer"], ["resource_id", 1], ["namespace", "admin"]]
+  [1m[36mActiveAdmin::Comment Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "active_admin_comments" WHERE "active_admin_comments"."resource_type" = ? AND "active_admin_comments"."resource_id" = ? AND "active_admin_comments"."namespace" = ? LIMIT ? OFFSET ?[0m  [["resource_type", "Customer"], ["resource_id", 1], ["namespace", "admin"], ["LIMIT", 1], ["OFFSET", 0]]
+  Rendered /Users/yueranyu/.rvm/gems/ruby-2.6.3/gems/activeadmin-2.6.1/app/views/active_admin/resource/show.html.arb (Duration: 23.5ms | Allocations: 28794)
+Completed 200 OK in 27ms (Views: 23.5ms | ActiveRecord: 0.5ms | Allocations: 31811)
+
+
+Started GET "/admin/customers" for ::1 at 2020-03-21 22:40:45 -0500
+Processing by Admin::CustomersController#index as HTML
+  [1m[36mAdminUser Load (0.1ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/yueranyu/.rvm/gems/ruby-2.6.3/gems/activeadmin-2.6.1/app/views/active_admin/resource/index.html.arb
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT 1 AS one FROM "customers" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT 1 AS one FROM "customers" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "customers"[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT 1 AS one FROM "customers" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT "customers".* FROM "customers" ORDER BY "customers"."id" desc LIMIT ? OFFSET ?[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  Rendered /Users/yueranyu/.rvm/gems/ruby-2.6.3/gems/activeadmin-2.6.1/app/views/active_admin/resource/index.html.arb (Duration: 48.8ms | Allocations: 45578)
+Completed 200 OK in 52ms (Views: 48.7ms | ActiveRecord: 0.5ms | Allocations: 47764)
+
+
+Started GET "/admin/customers/new" for ::1 at 2020-03-21 22:40:52 -0500
+Processing by Admin::CustomersController#new as HTML
+  [1m[36mAdminUser Load (0.1ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/yueranyu/.rvm/gems/ruby-2.6.3/gems/activeadmin-2.6.1/app/views/active_admin/resource/new.html.arb
+  Rendered /Users/yueranyu/.rvm/gems/ruby-2.6.3/gems/activeadmin-2.6.1/app/views/active_admin/resource/new.html.arb (Duration: 21.4ms | Allocations: 25665)
+Completed 200 OK in 24ms (Views: 21.9ms | ActiveRecord: 0.1ms | Allocations: 27698)
+
+
+Started POST "/admin/customers" for ::1 at 2020-03-21 22:41:23 -0500
+Processing by Admin::CustomersController#create as HTML
+  Parameters: {"authenticity_token"=>"Ad0VMRFNYF1MHGPJmu9DBjGGwHmfypGCou/zUr/+qH8U85F9sMLIqtrFvXO7DVt92WAw1Wcb6O0mDhvbRR0AYA==", "customer"=>{"fullname"=>"Chibi Usa", "phone_number"=>"20412345678", "email"=>"", "image"=>"", "notes"=>"She is a little girl."}, "commit"=>"Create Customer"}
+  [1m[36mAdminUser Load (0.1ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCustomer Create (0.5ms)[0m  [1m[32mINSERT INTO "customers" ("fullname", "phone_number", "email", "image", "notes", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["fullname", "Chibi Usa"], ["phone_number", "20412345678"], ["email", ""], ["image", ""], ["notes", "She is a little girl."], ["created_at", "2020-03-22 03:41:23.617917"], ["updated_at", "2020-03-22 03:41:23.617917"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/admin/customers/3
+Completed 302 Found in 9ms (ActiveRecord: 1.4ms | Allocations: 7747)
+
+
+Started GET "/admin/customers/3" for ::1 at 2020-03-21 22:41:23 -0500
+Processing by Admin::CustomersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mAdminUser Load (0.1ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering /Users/yueranyu/.rvm/gems/ruby-2.6.3/gems/activeadmin-2.6.1/app/views/active_admin/resource/show.html.arb
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "active_admin_comments" WHERE "active_admin_comments"."resource_type" = ? AND "active_admin_comments"."resource_id" = ? AND "active_admin_comments"."namespace" = ?[0m  [["resource_type", "Customer"], ["resource_id", 3], ["namespace", "admin"]]
+  [1m[36mActiveAdmin::Comment Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "active_admin_comments" WHERE "active_admin_comments"."resource_type" = ? AND "active_admin_comments"."resource_id" = ? AND "active_admin_comments"."namespace" = ? LIMIT ? OFFSET ?[0m  [["resource_type", "Customer"], ["resource_id", 3], ["namespace", "admin"], ["LIMIT", 1], ["OFFSET", 0]]
+  Rendered /Users/yueranyu/.rvm/gems/ruby-2.6.3/gems/activeadmin-2.6.1/app/views/active_admin/resource/show.html.arb (Duration: 25.2ms | Allocations: 28994)
+Completed 200 OK in 28ms (Views: 25.2ms | ActiveRecord: 0.5ms | Allocations: 32006)
+
+
+Started GET "/admin/customers" for ::1 at 2020-03-21 22:41:26 -0500
+Processing by Admin::CustomersController#index as HTML
+  [1m[36mAdminUser Load (0.1ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/yueranyu/.rvm/gems/ruby-2.6.3/gems/activeadmin-2.6.1/app/views/active_admin/resource/index.html.arb
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT 1 AS one FROM "customers" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT 1 AS one FROM "customers" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "customers"[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT 1 AS one FROM "customers" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT "customers".* FROM "customers" ORDER BY "customers"."id" desc LIMIT ? OFFSET ?[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  Rendered /Users/yueranyu/.rvm/gems/ruby-2.6.3/gems/activeadmin-2.6.1/app/views/active_admin/resource/index.html.arb (Duration: 51.1ms | Allocations: 47669)
+Completed 200 OK in 54ms (Views: 51.2ms | ActiveRecord: 0.5ms | Allocations: 49856)
+
+
+Started GET "/admin/customers/new" for ::1 at 2020-03-21 22:41:33 -0500
+Processing by Admin::CustomersController#new as HTML
+  [1m[36mAdminUser Load (0.1ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/yueranyu/.rvm/gems/ruby-2.6.3/gems/activeadmin-2.6.1/app/views/active_admin/resource/new.html.arb
+  Rendered /Users/yueranyu/.rvm/gems/ruby-2.6.3/gems/activeadmin-2.6.1/app/views/active_admin/resource/new.html.arb (Duration: 22.0ms | Allocations: 25661)
+Completed 200 OK in 25ms (Views: 22.4ms | ActiveRecord: 0.1ms | Allocations: 27693)
+
+
+Started POST "/admin/customers" for ::1 at 2020-03-21 22:42:08 -0500
+Processing by Admin::CustomersController#create as HTML
+  Parameters: {"authenticity_token"=>"INYc/aHOi2GVvgosbwHZ+Shnx5nClobD//CiY2RWsC41+JixAEEjlgNn1JZO48GCwIE3NTpH/6x7EUrqnrUYMQ==", "customer"=>{"fullname"=>"Jupiter", "phone_number"=>"20434561234", "email"=>"", "image"=>"", "notes"=>"She is brown hair with green suit."}, "commit"=>"Create Customer"}
+  [1m[36mAdminUser Load (0.1ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCustomer Create (0.4ms)[0m  [1m[32mINSERT INTO "customers" ("fullname", "phone_number", "email", "image", "notes", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["fullname", "Jupiter"], ["phone_number", "20434561234"], ["email", ""], ["image", ""], ["notes", "She is brown hair with green suit."], ["created_at", "2020-03-22 03:42:08.987919"], ["updated_at", "2020-03-22 03:42:08.987919"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/admin/customers/4
+Completed 302 Found in 9ms (ActiveRecord: 1.2ms | Allocations: 7750)
+
+
+Started GET "/admin/customers/4" for ::1 at 2020-03-21 22:42:08 -0500
+Processing by Admin::CustomersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mAdminUser Load (0.1ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering /Users/yueranyu/.rvm/gems/ruby-2.6.3/gems/activeadmin-2.6.1/app/views/active_admin/resource/show.html.arb
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "active_admin_comments" WHERE "active_admin_comments"."resource_type" = ? AND "active_admin_comments"."resource_id" = ? AND "active_admin_comments"."namespace" = ?[0m  [["resource_type", "Customer"], ["resource_id", 4], ["namespace", "admin"]]
+  [1m[36mActiveAdmin::Comment Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "active_admin_comments" WHERE "active_admin_comments"."resource_type" = ? AND "active_admin_comments"."resource_id" = ? AND "active_admin_comments"."namespace" = ? LIMIT ? OFFSET ?[0m  [["resource_type", "Customer"], ["resource_id", 4], ["namespace", "admin"], ["LIMIT", 1], ["OFFSET", 0]]
+  Rendered /Users/yueranyu/.rvm/gems/ruby-2.6.3/gems/activeadmin-2.6.1/app/views/active_admin/resource/show.html.arb (Duration: 25.0ms | Allocations: 29001)
+Completed 200 OK in 39ms (Views: 25.0ms | ActiveRecord: 0.5ms | Allocations: 32022)
+
+
+Started GET "/admin/customers" for ::1 at 2020-03-21 22:42:13 -0500
+Processing by Admin::CustomersController#index as HTML
+  [1m[36mAdminUser Load (0.1ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/yueranyu/.rvm/gems/ruby-2.6.3/gems/activeadmin-2.6.1/app/views/active_admin/resource/index.html.arb
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT 1 AS one FROM "customers" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT 1 AS one FROM "customers" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "customers"[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT 1 AS one FROM "customers" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT "customers".* FROM "customers" ORDER BY "customers"."id" desc LIMIT ? OFFSET ?[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  Rendered /Users/yueranyu/.rvm/gems/ruby-2.6.3/gems/activeadmin-2.6.1/app/views/active_admin/resource/index.html.arb (Duration: 52.0ms | Allocations: 49752)
+Completed 200 OK in 55ms (Views: 52.1ms | ActiveRecord: 0.5ms | Allocations: 51947)
+
+
+Started GET "/admin/customers/new" for ::1 at 2020-03-21 22:42:15 -0500
+Processing by Admin::CustomersController#new as HTML
+  [1m[36mAdminUser Load (0.1ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/yueranyu/.rvm/gems/ruby-2.6.3/gems/activeadmin-2.6.1/app/views/active_admin/resource/new.html.arb
+  Rendered /Users/yueranyu/.rvm/gems/ruby-2.6.3/gems/activeadmin-2.6.1/app/views/active_admin/resource/new.html.arb (Duration: 21.6ms | Allocations: 25664)
+Completed 200 OK in 24ms (Views: 22.0ms | ActiveRecord: 0.1ms | Allocations: 27697)
+
+
+Started POST "/admin/customers" for ::1 at 2020-03-21 22:42:47 -0500
+Processing by Admin::CustomersController#create as HTML
+  Parameters: {"authenticity_token"=>"/gPYR599bTnCwvRCMZT2mmLJHQ2KqLOCExiAaQCdoCPrLVwLPvLFzlQbKvgQdu7hii/toXJ5yu2X+Wjg+n4IPA==", "customer"=>{"fullname"=>"Makato", "phone_number"=>"20434312342", "email"=>"", "image"=>"", "notes"=>"She is very happy."}, "commit"=>"Create Customer"}
+  [1m[36mAdminUser Load (0.1ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCustomer Create (0.4ms)[0m  [1m[32mINSERT INTO "customers" ("fullname", "phone_number", "email", "image", "notes", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["fullname", "Makato"], ["phone_number", "20434312342"], ["email", ""], ["image", ""], ["notes", "She is very happy."], ["created_at", "2020-03-22 03:42:47.923537"], ["updated_at", "2020-03-22 03:42:47.923537"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/admin/customers/5
+Completed 302 Found in 8ms (ActiveRecord: 1.3ms | Allocations: 7746)
+
+
+Started GET "/admin/customers/5" for ::1 at 2020-03-21 22:42:47 -0500
+Processing by Admin::CustomersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAdminUser Load (0.1ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering /Users/yueranyu/.rvm/gems/ruby-2.6.3/gems/activeadmin-2.6.1/app/views/active_admin/resource/show.html.arb
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "active_admin_comments" WHERE "active_admin_comments"."resource_type" = ? AND "active_admin_comments"."resource_id" = ? AND "active_admin_comments"."namespace" = ?[0m  [["resource_type", "Customer"], ["resource_id", 5], ["namespace", "admin"]]
+  [1m[36mActiveAdmin::Comment Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "active_admin_comments" WHERE "active_admin_comments"."resource_type" = ? AND "active_admin_comments"."resource_id" = ? AND "active_admin_comments"."namespace" = ? LIMIT ? OFFSET ?[0m  [["resource_type", "Customer"], ["resource_id", 5], ["namespace", "admin"], ["LIMIT", 1], ["OFFSET", 0]]
+  Rendered /Users/yueranyu/.rvm/gems/ruby-2.6.3/gems/activeadmin-2.6.1/app/views/active_admin/resource/show.html.arb (Duration: 24.1ms | Allocations: 28994)
+Completed 200 OK in 28ms (Views: 24.2ms | ActiveRecord: 0.5ms | Allocations: 32015)
+
+
+Started GET "/admin/customers" for ::1 at 2020-03-21 22:42:49 -0500
+Processing by Admin::CustomersController#index as HTML
+  [1m[36mAdminUser Load (0.1ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/yueranyu/.rvm/gems/ruby-2.6.3/gems/activeadmin-2.6.1/app/views/active_admin/resource/index.html.arb
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT 1 AS one FROM "customers" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT 1 AS one FROM "customers" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "customers"[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT 1 AS one FROM "customers" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT "customers".* FROM "customers" ORDER BY "customers"."id" desc LIMIT ? OFFSET ?[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  Rendered /Users/yueranyu/.rvm/gems/ruby-2.6.3/gems/activeadmin-2.6.1/app/views/active_admin/resource/index.html.arb (Duration: 44.6ms | Allocations: 51846)
+Completed 200 OK in 57ms (Views: 44.5ms | ActiveRecord: 0.5ms | Allocations: 54036)
+
+
+Started GET "/admin/customers/4/edit" for ::1 at 2020-03-21 22:42:56 -0500
+Processing by Admin::CustomersController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mAdminUser Load (0.1ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering /Users/yueranyu/.rvm/gems/ruby-2.6.3/gems/activeadmin-2.6.1/app/views/active_admin/resource/edit.html.arb
+  [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered /Users/yueranyu/.rvm/gems/ruby-2.6.3/gems/activeadmin-2.6.1/app/views/active_admin/resource/edit.html.arb (Duration: 32.2ms | Allocations: 27664)
+Completed 200 OK in 36ms (Views: 32.6ms | ActiveRecord: 0.2ms | Allocations: 30667)
+
+
+Started PATCH "/admin/customers/4" for ::1 at 2020-03-21 22:43:05 -0500
+Processing by Admin::CustomersController#update as HTML
+  Parameters: {"authenticity_token"=>"IM7Uf2dCgZKzJYvAImQE2HgpC3pdCy69I426W0XYZ4M14FAzxs0pZSX8VXoDhhyjkM/71qXaV9KnbFLSvzvPnA==", "customer"=>{"fullname"=>"Jupiter", "phone_number"=>"20434561234", "email"=>"", "image"=>"", "notes"=>"She is red hair with red suit."}, "commit"=>"Update Customer", "id"=>"4"}
+  [1m[36mAdminUser Load (0.1ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCustomer Update (0.4ms)[0m  [1m[33mUPDATE "customers" SET "notes" = ?, "updated_at" = ? WHERE "customers"."id" = ?[0m  [["notes", "She is red hair with red suit."], ["updated_at", "2020-03-22 03:43:05.823259"], ["id", 4]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/admin/customers/4
+Completed 302 Found in 9ms (ActiveRecord: 1.5ms | Allocations: 8811)
+
+
+Started GET "/admin/customers/4" for ::1 at 2020-03-21 22:43:05 -0500
+Processing by Admin::CustomersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mAdminUser Load (0.1ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering /Users/yueranyu/.rvm/gems/ruby-2.6.3/gems/activeadmin-2.6.1/app/views/active_admin/resource/show.html.arb
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "active_admin_comments" WHERE "active_admin_comments"."resource_type" = ? AND "active_admin_comments"."resource_id" = ? AND "active_admin_comments"."namespace" = ?[0m  [["resource_type", "Customer"], ["resource_id", 4], ["namespace", "admin"]]
+  [1m[36mActiveAdmin::Comment Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "active_admin_comments" WHERE "active_admin_comments"."resource_type" = ? AND "active_admin_comments"."resource_id" = ? AND "active_admin_comments"."namespace" = ? LIMIT ? OFFSET ?[0m  [["resource_type", "Customer"], ["resource_id", 4], ["namespace", "admin"], ["LIMIT", 1], ["OFFSET", 0]]
+  Rendered /Users/yueranyu/.rvm/gems/ruby-2.6.3/gems/activeadmin-2.6.1/app/views/active_admin/resource/show.html.arb (Duration: 24.3ms | Allocations: 28999)
+Completed 200 OK in 28ms (Views: 24.4ms | ActiveRecord: 0.5ms | Allocations: 32017)
+
+
+Started GET "/admin/customers" for ::1 at 2020-03-21 22:43:07 -0500
+Processing by Admin::CustomersController#index as HTML
+  [1m[36mAdminUser Load (0.1ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/yueranyu/.rvm/gems/ruby-2.6.3/gems/activeadmin-2.6.1/app/views/active_admin/resource/index.html.arb
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT 1 AS one FROM "customers" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT 1 AS one FROM "customers" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "customers"[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT 1 AS one FROM "customers" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT "customers".* FROM "customers" ORDER BY "customers"."id" desc LIMIT ? OFFSET ?[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  Rendered /Users/yueranyu/.rvm/gems/ruby-2.6.3/gems/activeadmin-2.6.1/app/views/active_admin/resource/index.html.arb (Duration: 55.8ms | Allocations: 51846)
+Completed 200 OK in 59ms (Views: 55.8ms | ActiveRecord: 0.6ms | Allocations: 54036)
+
+
+Started GET "/" for ::1 at 2020-03-21 22:45:01 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CustomersController#index as HTML
+  Rendering customers/index.html.erb within layouts/application
+  Rendered customers/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.0ms | Allocations: 6015)
+
+
+Started GET "/" for ::1 at 2020-03-21 22:46:35 -0500
+Processing by CustomersController#index as HTML
+  Rendering customers/index.html.erb within layouts/application
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT "customers".* FROM "customers"[0m
+  ↳ app/views/customers/index.html.erb:3
+  Rendered customers/index.html.erb within layouts/application (Duration: 7.0ms | Allocations: 5870)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 16.1ms | ActiveRecord: 0.7ms | Allocations: 12944)
+
+
+Started GET "/" for ::1 at 2020-03-21 22:46:45 -0500
+Processing by CustomersController#index as HTML
+  Rendering customers/index.html.erb within layouts/application
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT "customers".* FROM "customers"[0m
+  ↳ app/views/customers/index.html.erb:3
+  Rendered customers/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 776)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 22ms (Views: 20.2ms | ActiveRecord: 0.1ms | Allocations: 7845)
+
+
+Started GET "/" for ::1 at 2020-03-21 23:24:51 -0500
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CustomersController#index as HTML
+  Rendering customers/index.html.erb within layouts/application
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT "customers".* FROM "customers"[0m
+  ↳ app/views/customers/index.html.erb:5
+  Rendered collection of customers/_customer.html.erb [5 times] (Duration: 349.5ms | Allocations: 241370)
+  Rendered customers/index.html.erb within layouts/application (Duration: 352.8ms | Allocations: 242449)
+Completed 500 Internal Server Error in 358ms (ActiveRecord: 0.1ms | Allocations: 244014)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `horse' for #<#<Class:0x00007ff27ea0b900>:0x00007ff27ea67a48>):
+    1: <div class="column">
+    2:   <div class="card">
+    3:   <% if horse.image.present?  %>
+    4:     <div class= "card-image">
+    5:       <figure class="image">
+    6:       <%= image_tag horse.image %>
+  
+app/views/customers/_customer.html.erb:3
+app/views/customers/index.html.erb:5
+Started GET "/" for ::1 at 2020-03-21 23:28:08 -0500
+Processing by CustomersController#index as HTML
+  Rendering customers/index.html.erb within layouts/application
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT "customers".* FROM "customers"[0m
+  ↳ app/views/customers/index.html.erb:5
+  Rendered collection of customers/_customer.html.erb [5 times] (Duration: 0.5ms | Allocations: 344)
+  Rendered customers/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1404)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 11.6ms | ActiveRecord: 0.1ms | Allocations: 8531)
+
+
+Started GET "/" for ::1 at 2020-03-21 23:42:12 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CustomersController#index as HTML
+  Rendering customers/index.html.erb within layouts/application
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT "customers".* FROM "customers"[0m
+  ↳ app/views/customers/index.html.erb:5
+  Rendered collection of customers/_customer.html.erb [5 times] (Duration: 0.2ms | Allocations: 101)
+  Rendered customers/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 927)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 11.5ms | ActiveRecord: 0.2ms | Allocations: 6757)
+
+
+Started GET "/" for ::1 at 2020-03-21 23:44:41 -0500
+Processing by CustomersController#index as HTML
+  Rendering customers/index.html.erb within layouts/application
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT "customers".* FROM "customers"[0m
+  ↳ app/views/customers/index.html.erb:5
+  Rendered collection of customers/_customer.html.erb [5 times] (Duration: 0.5ms | Allocations: 336)
+  Rendered customers/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1381)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.1ms | Allocations: 9937)
+
+
+  
+ActionView::Template::Error (Missing partial customers/_index with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :arb, :jbuilder]}. Searched in:
+  * "/Users/yueranyu/Public/Term5/02Ruby_on_Rails/Challenge/YueranYu_UltimateChallenges/CustomerRelationManager/app/views"
+  * "/Users/yueranyu/.rvm/gems/ruby-2.6.3/gems/devise-4.7.1/app/views"
+  * "/Users/yueranyu/.rvm/gems/ruby-2.6.3/gems/activeadmin-2.6.1/app/views"
+  * "/Users/yueranyu/.rvm/gems/ruby-2.6.3/gems/kaminari-core-1.2.0/app/views"
+  * "/Users/yueranyu/.rvm/gems/ruby-2.6.3/gems/actiontext-6.0.2.2/app/views"
+  * "/Users/yueranyu/.rvm/gems/ruby-2.6.3/gems/actionmailbox-6.0.2.2/app/views"
+):
+    17:         <header>
+    18:           <h1 class="title is-1"><%= link_to 'All Customers', root_path %></h1>
+    19:         </header>
+    20:         <%= render partial: 'customers/index' %>
+    21:         <%= yield %>
+    22:       </div>
+    23:     </section>
+  
+app/views/layouts/application.html.erb:20
+Started GET "/" for ::1 at 2020-03-21 23:45:38 -0500
+Processing by CustomersController#index as HTML
+  Rendering customers/index.html.erb within layouts/application
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT "customers".* FROM "customers"[0m
+  ↳ app/views/customers/index.html.erb:5
+  Rendered collection of customers/_customer.html.erb [5 times] (Duration: 0.5ms | Allocations: 336)
+  Rendered customers/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1381)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 11.5ms | ActiveRecord: 0.1ms | Allocations: 8511)
+
+
+Started GET "/" for ::1 at 2020-03-21 23:46:48 -0500
+Processing by CustomersController#index as HTML
+  Rendering customers/index.html.erb within layouts/application
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT "customers".* FROM "customers"[0m
+  ↳ app/views/customers/index.html.erb:5
+  Rendered collection of customers/_customer.html.erb [5 times] (Duration: 0.5ms | Allocations: 336)
+  Rendered customers/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1388)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.1ms | Allocations: 8527)
+
+
+Started GET "/" for ::1 at 2020-03-21 23:46:59 -0500
+Processing by CustomersController#index as HTML
+  Rendering customers/index.html.erb within layouts/application
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT "customers".* FROM "customers"[0m
+  ↳ app/views/customers/index.html.erb:5
+  Rendered collection of customers/_customer.html.erb [5 times] (Duration: 0.5ms | Allocations: 336)
+  Rendered customers/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1382)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.1ms | Allocations: 8504)
+
+
+Started GET "/" for ::1 at 2020-03-21 23:47:15 -0500
+Processing by CustomersController#index as HTML
+  Rendering customers/index.html.erb within layouts/application
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT "customers".* FROM "customers"[0m
+  ↳ app/views/customers/index.html.erb:5
+  Rendered collection of customers/_customer.html.erb [5 times] (Duration: 0.5ms | Allocations: 336)
+  Rendered customers/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1381)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.1ms | Allocations: 8454)
+
+
+Started GET "/admin" for ::1 at 2020-03-21 23:49:09 -0500
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mAdminUser Load (0.1ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/yueranyu/.rvm/gems/ruby-2.6.3/gems/activeadmin-2.6.1/app/views/active_admin/page/index.html.arb
+  Rendered /Users/yueranyu/.rvm/gems/ruby-2.6.3/gems/activeadmin-2.6.1/app/views/active_admin/page/index.html.arb (Duration: 16.6ms | Allocations: 16729)
+Completed 200 OK in 36ms (Views: 17.9ms | ActiveRecord: 0.6ms | Allocations: 28727)
+
+
+Started GET "/admin/customers" for ::1 at 2020-03-21 23:49:11 -0500
+Processing by Admin::CustomersController#index as HTML
+  [1m[36mAdminUser Load (0.1ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/yueranyu/.rvm/gems/ruby-2.6.3/gems/activeadmin-2.6.1/app/views/active_admin/resource/index.html.arb
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT 1 AS one FROM "customers" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT 1 AS one FROM "customers" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "customers"[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT 1 AS one FROM "customers" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT "customers".* FROM "customers" ORDER BY "customers"."id" desc LIMIT ? OFFSET ?[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  Rendered /Users/yueranyu/.rvm/gems/ruby-2.6.3/gems/activeadmin-2.6.1/app/views/active_admin/resource/index.html.arb (Duration: 61.2ms | Allocations: 53643)
+Completed 200 OK in 66ms (Views: 63.0ms | ActiveRecord: 0.5ms | Allocations: 57026)
+
+
+Started GET "/admin/customers/new" for ::1 at 2020-03-21 23:49:28 -0500
+Processing by Admin::CustomersController#new as HTML
+  [1m[36mAdminUser Load (0.1ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/yueranyu/.rvm/gems/ruby-2.6.3/gems/activeadmin-2.6.1/app/views/active_admin/resource/new.html.arb
+  Rendered /Users/yueranyu/.rvm/gems/ruby-2.6.3/gems/activeadmin-2.6.1/app/views/active_admin/resource/new.html.arb (Duration: 19.7ms | Allocations: 25780)
+Completed 200 OK in 24ms (Views: 21.6ms | ActiveRecord: 0.1ms | Allocations: 28744)
+
+
+Started POST "/admin/customers" for ::1 at 2020-03-21 23:50:13 -0500
+Processing by Admin::CustomersController#create as HTML
+  Parameters: {"authenticity_token"=>"T4/QOcYjVoAA+TQASgZQBLoW7tqIxrUC1Jxa2dmS2ZtaoVR1Z6z+d5Yg6rpr5Eh/UvAednAXzG1QfbJQI3FxhA==", "customer"=>{"fullname"=>"Mars", "phone_number"=>"20412121314", "email"=>"mars@rrc.ca", "image"=>"", "notes"=>"She has golden hair."}, "commit"=>"Create Customer"}
+  [1m[36mAdminUser Load (0.1ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCustomer Create (0.4ms)[0m  [1m[32mINSERT INTO "customers" ("fullname", "phone_number", "email", "image", "notes", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["fullname", "Mars"], ["phone_number", "20412121314"], ["email", "mars@rrc.ca"], ["image", ""], ["notes", "She has golden hair."], ["created_at", "2020-03-22 04:50:13.052065"], ["updated_at", "2020-03-22 04:50:13.052065"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/admin/customers/6
+Completed 302 Found in 13ms (ActiveRecord: 1.2ms | Allocations: 10511)
+
+
+Started GET "/admin/customers/6" for ::1 at 2020-03-21 23:50:13 -0500
+Processing by Admin::CustomersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mAdminUser Load (0.1ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering /Users/yueranyu/.rvm/gems/ruby-2.6.3/gems/activeadmin-2.6.1/app/views/active_admin/resource/show.html.arb
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "active_admin_comments" WHERE "active_admin_comments"."resource_type" = ? AND "active_admin_comments"."resource_id" = ? AND "active_admin_comments"."namespace" = ?[0m  [["resource_type", "Customer"], ["resource_id", 6], ["namespace", "admin"]]
+  [1m[36mActiveAdmin::Comment Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "active_admin_comments" WHERE "active_admin_comments"."resource_type" = ? AND "active_admin_comments"."resource_id" = ? AND "active_admin_comments"."namespace" = ? LIMIT ? OFFSET ?[0m  [["resource_type", "Customer"], ["resource_id", 6], ["namespace", "admin"], ["LIMIT", 1], ["OFFSET", 0]]
+  Rendered /Users/yueranyu/.rvm/gems/ruby-2.6.3/gems/activeadmin-2.6.1/app/views/active_admin/resource/show.html.arb (Duration: 26.0ms | Allocations: 29943)
+Completed 200 OK in 31ms (Views: 27.8ms | ActiveRecord: 0.5ms | Allocations: 33984)
+
+
