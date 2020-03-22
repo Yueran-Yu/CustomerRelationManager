@@ -1,29 +1,29 @@
-<div class="column">
-  <div class="card">
-  <% if customer.image.present?  %>
-    <div class= "card-image">
-      <figure class="image">
-      <%= image_tag customer.image %>
-      </figure>
-    </div>
-  <% end  %>
-
-
-    <div class="card-content">
+<div class="c">
+  <div class = "b">
+  <div style="background-color: #f2f2f2">
       <p class="title">
           <%= customer.fullname %>
       </p>
     </div>
-    <footer class="card-footer">
-      <p class="card-footer-item">
-        Phone Number: <br><%= customer.phone_number %>
+  <% if customer.image.present?  %>
+    <div id="img">
+      <%= image_tag(customer.image) %>
+    </div>
+  <% end  %>
+
+    <footer class="foot" >
+     <p> <strong >Phone: </strong>
+        <%= customer.phone_number %>
       </p>
-      <p class="card-footer-item">
-        Email: <br><%= customer.email %>
+
+      <p>
+      <strong>Email: </strong>
+        <%= customer.email %>
       </p>
-      <p class="card-footer-item">
-        Notes: <br><%= customer.notes %>
-      </p>
+      <p>
+      <strong>Notes:</strong>
+         <br ><%= customer.notes %>
+        </p>
     </footer>
   </div>
 </div>
